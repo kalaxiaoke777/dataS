@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-data = pd.read_csv("./seaborn-data/ML_data/world-happiness-report-2017.csv")
+data = pd.read_csv("./ML_data/world-happiness-report-2017.csv")
 
 train_data = data.sample(frac=0.8)
 test_data = data.drop(train_data.index)

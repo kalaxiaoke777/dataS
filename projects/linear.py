@@ -68,8 +68,6 @@ class linearRegression:
             polynomial_degree=self.polynomial_degree,
             sinusoid_degree=self.sinusoid_degree,
             normalize_data=self.normalize_data,
-            feature_mean=self.feature_mean,
-            feature_deviation=self.feature_deviation,
         )
         return self.cost_fc(data_processed, labels)
 
@@ -79,7 +77,5 @@ class linearRegression:
             polynomial_degree=self.polynomial_degree,
             sinusoid_degree=self.sinusoid_degree,
             normalize_data=self.normalize_data,
-            feature_mean=self.feature_mean,
-            feature_deviation=self.feature_deviation,
         )
         return linearRegression.hypothesis(data_processed, self.theta)
